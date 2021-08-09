@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Category</title>
+
+    <!-- Page icon -->
+    <link rel="shortcut icon" href="images/Logo.png" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <style>
+        #Products>div.row.mx-auto.container>nav>ul>li.page-item.active>a {
+            background-color: black;
+        }
+
+        .pagination a {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Creating a Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+        <div class="container">
+            <img src="images/Logo.png" alt="Logo" style="height: 10%" />
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span id="bar" class="fas fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto font-weight-bold">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fal fa-shopping-bag my-cart-icon "><span
+                                class=" badge-notify my-cart-badge"></span></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="Products" class="my-5 py-5">
+        <div class="container mt-5 py-5">
+            <h2 class="font-weight-bold">Our Products</h2>
+            <hr />
+            <p>Please view our lovely products</p>
+
+        </div>
+        <div class="">
+            <div class="dropdown container-fluid py-1 ">
+                <button class="btn buy-btn dropdown-toggle btn-sm" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Select color
+                </button>
+                <ul class="listing dropdown-menu">
+                    <li><a class="dropdown-item" href="#">red</a></li>
+                    <li><a class="dropdown-item" href="#">black</a></li>
+                    <li><a class="dropdown-item" href="#">white</a></li>
+                    <li><a class="dropdown-item" href="#">pink</a></li>
+                    <li><a class="dropdown-item" href="#">blue</a></li>
+                </ul>
+            </div>
+            <div class="dropdown container-fluid ">
+                <button class="btn buy-btn dropdown-toggle btn-sm" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Shop by price
+                </button>
+                <ul class="listing dropdown-menu">
+                    <li><a class="dropdown-item" href="#">R0-R499</a></li>
+                    <li><a class="dropdown-item" href="#">R500-R999</a></li>
+                    <li><a class="dropdown-item" href="#">R1000-R1499</a></li>
+                    <li><a class="dropdown-item" href="#">R1500-R2000</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row mx-auto container">
+            <div onclick="window.location.href='product.html';"
+                class="product red R1500-R2000 text-center col-lg-3 col-md-4 col-12 my-5 py-2">
+                <img class="img-fluid" src="images/Nike/mercurial.jpg" alt="" style="width: 60%; height: 50%" />
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="pro-name">Mercurial</h5>
+                <h4 pro-price>R1600</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div onclick="window.location.href='products/adidasBlack.html';"
+                class="product black R1000-R1499 text-center col-lg-3 col-md-4 col-12 my-5 py-2">
+                <img class="img-fluid" src="images/Adidas/AdidasAceblack.JPG" alt="" style="width: 60%; height: 50%" />
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="pro-name">Adidas Black</h5>
+                <h4 pro-price>R1000</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div onclick="window.location.href='products/pumaFuture.html';"
+                class="product white R1000-R1499 text-center col-lg-3 col-md-4 col-12 my-5 py-2">
+                <img data-filter="white" class="img-fluid " src="images/Puma/pumaWhite.jpg" alt=""
+                    style="width: 60%; height: 50%" />
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="pro-name">Puma Future</h5>
+                <h4 pro-price>R1200</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div onclick="window.location.href='products/newbalanceV.html';"
+                class="product white R1000-R1499 text-center col-lg-3 col-md-4 col-12 my-5 py-2">
+                <img data-filter="white" class="img-fluid" src="images/New balance/BalanceV3silver.jpg" alt=""
+                    style="width: 60%; height: 50%" />
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="pro-name">New Balance V3</h5>
+                <h4 pro-price>R1200</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div onclick="window.location.href='products/umbroGT.html';"
+                class="product blue R500-R999 text-center col-lg-3 col-md-4 col-12 my-5 py-2">
+                <img data-filter="blue" class="img-fluid" src="images/Umbro/UmbroGT2ProWhite.jpg" alt=""
+                    style="width: 60%; height: 50%" />
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="pro-name">Umbro GT2</h5>
+                <h4 pro-price>R800</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div onclick="window.location.href='products/armourBlur.html';"
+                class="product black R1000-R1499 text-center col-lg-3 col-md-4 col-12 my-5 py-2">
+                <img data-filter="black" class="img-fluid" src="images/Armour/ArmourBlurBlack.jpg" alt=""
+                    style="width: 60%; height: 50%" />
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="pro-name">Armour Blur</h5>
+                <h4 pro-price>R1200</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div onclick="window.location.href='products/nikeWhite.html';"
+                class="product white R1000-R1499 text-center col-lg-3 col-md-4 col-12 my-5 py-2">
+                <img data-filter="white" class="img-fluid" src="images/Nike/nikeWhite2.jpg" alt=""
+                    style="width: 60%; height: 50%" />
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="pro-name">Nike White</h5>
+                <h4 pro-price>R1300</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div onclick="window.location.href='products/adidasPredator.html';"
+                class="product white R1000-R1499 text-center col-lg-3 col-md-4 col-12 my-5 py-2">
+                <img data-filter="white" class="img-fluid" src="images/Adidas/AdidasPredatorWhite2.jpg" alt=""
+                    style="width: 60%; height: 50%" />
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="pro-name">Adidas Predator</h5>
+                <h4 pro-price>R1100</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div onclick="window.location.href='products/pumaPink.html';"
+                class="product pink R1000-R2000 text-center col-lg-3 col-md-4 col-12 my-5 py-2">
+                <img class="img-fluid" src="images/Puma/PumaFuturePink.jpg" alt="" style="width: 60%; height: 50%" />
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="pro-name">Puma Future Z</h5>
+                <h4 pro-price>R1600</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div onclick="window.location.href='products/balanceRed.html';"
+                class="product red R1000-R1499 text-center col-lg-3 col-md-4 col-12 my-5 py-2">
+                <img class="img-fluid" src="images/New balance/BalanceV6red.jpeg" alt=""
+                    style="width: 60%; height: 50%" />
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="pro-name">New Balance v6</h5>
+                <h4 pro-price>R1400</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div onclick="window.location.href='products/umbroPro.html';"
+                class="product white R1000-R1499 text-center col-lg-3 col-md-4 col-12 my-5 py-2">
+                <img class="img-fluid" src="images/Umbro/UmbroProFGwhite.jpg" alt="" style="width: 60%; height: 50%" />
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="pro-name">Umbro Pro</h5>
+                <h4 pro-price>R1100</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div onclick="window.location.href='products/armourBlue.html';"
+                class="product blue R1000-R1499 text-center col-lg-3 col-md-4 col-12 my-5 py-2">
+                <img class="img-fluid" src="images/Armour/ArmourMagneticoBlue.png" alt=""
+                    style="width: 60%; height: 50%" />
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="pro-name">Under Armour Magnetic</h5>
+                <h4 pro-price>R1000</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+
+    </section>
+    <nav aria-label="...">
+        <ul class="pagination mt-5">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item " aria-current="page">
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small pt-4 mt-5 py-5">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left mt-3 pb-3">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Liso Football store</h6>
+                    <img src="images/Logo.png" alt="">
+                </div>
+
+                <hr class="w-100 clearfix d-md-none" />
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                    <ul class="list-unstyled">
+                        <li>Nike</li>
+                        <li>Puma</li>
+                        <li>Umbro</li>
+                        <li>Adidas</li>
+                        <li>Under Armour</li>
+                        <li>New balance</li>
+                    </ul>
+                </div>
+
+                <hr class="w-100 clearfix d-md-none" />
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">GET HELP</h6>
+                    <ul class="list-unstyled">
+                        <li>Your Account</li>
+                        <li>Return</li>
+                        <li>Order status</li>
+                        <li>Help</li>
+                    </ul>
+                </div>
+
+                <hr class="w-100 clearfix d-md-none" />
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                    <p><i class="fas fa-home mr-3"></i>Khayelitsha mall, shop 2 </p>
+                    <p><i class="fas fa-envelope mr-3"></i> LisoF@gmail.com</p>
+                    <p><i class="fas fa-phone mr-3"></i> 021 345 6788</p>
+                    <p><i class="fas fa-print mr-3"></i> 021 345 6789</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Footer links -->
+
+            <hr>
+
+            <!-- Grid row -->
+            <div class="row d-flex align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p class="text-center text-md-left">
+                        © 2021 Copyright: Musa Ngcobo
+                    </p>
+                </div>
+
+                <!-- Grid column -->
+                <div class="col-md-5 col-lg-4 ml-lg-0">
+                    <!-- Social buttons -->
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <i class="fab fa-google-plus-g"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $(".listing>li>a").click(function () {
+                const sel_item = $(this).html();
+                $(".product").hide();
+                $(".product").each(function () {
+                    if ($(this).hasClass(sel_item)) {
+                        $(this).animate({ "width": "toggle" });
+                    }
+                })
+            })
+        })
+    </script>
+
+</body>
+
+</html>

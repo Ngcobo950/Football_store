@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+
+    <!-- Page icon -->
+    <link rel="shortcut icon" href="../images/Logo.png" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+
+    <!-- Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <script type="text/javascript" src="../Jquery.js"></script>
+
+    <style>
+      .small-img-group {
+        display: flex;
+        justify-content: space-between;
+      }
+      .small-img-col {
+        flex-basis: 25%;
+        cursor: pointer;
+      }
+      .sproduct select {
+        display: block;
+        padding: 5px 10px;
+      }
+      .sproduct input {
+        width: 50px;
+        height: 40px;
+        padding-left: 10px;
+        font-size: 16px;
+      }
+      .sproduct input {
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Creating a Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+      <div class="container">
+        <img src="../images/Logo.png" alt="Logo" style="height: 10%" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span id="bar" class="fas fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto font-weight-bold">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../category.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+
+            <li class="nav-item">
+              <i class="fal fa-shopping-bag my-cart-icon"
+                ><span class="badge-notify my-cart-badge"></span
+              ></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="container sproduct my-5 pt-5">
+      <div class="row mt-5">
+        <div class="col-lg-5 col-md-12 col-12">
+          <img
+            class="img-fluid w-100 pd-1"
+            src="../images/Adidas/AdidasPredatorWhite2.jpg"
+            id="MainImg"
+            alt=""
+          />
+          <div class="small-img-group">
+            <div class="smalll-img-col">
+              <img
+                src="../images/Adidas/AdidasPredatorWhite2.jpg"
+                width="100%"
+                class="small-img"
+                alt=""
+              />
+            </div>
+            <div class="small-img-col">
+              <img
+                src="../images/Adidas/AdidasPredatorRed.jpg"
+                width="100%"
+                class="small-img"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-12">
+          <h6>Home / Adidas Predator</h6>
+          <h3 class="py-4">Adidas Predator</h3>
+          <h2>R1100</h2>
+          <select class="my-3">
+            <option>Select Size</option>
+            <option>SA 5</option>
+            <option>SA 6</option>
+            <option>SA 7</option>
+            <option>SA 8</option>
+            <option>SA 9</option>
+            <option>SA 10</option>
+          </select>
+          <input type="number" value="1" />
+          <button
+            class="buy-btn my-cart-btn"
+            data-id="8"
+            data-name="Mercurial"
+            data-summary="summary 8"
+            data-price="1600"
+            data-quantity="1"
+            data-image="../images/Adidas/AdidasPredatorWhite2.jpg"
+          >
+            Add to Cart
+          </button>
+          <h4 class="mt-5 mb-5">Product Details</h4>
+          <span
+            >You're not cheating the system. You're just bending the rules. Find
+            your unfair advantage and transform your game with the all-new
+            adidas Predator. The soft textile upper on these football boots has
+            a mid-cut design to support your ankle. Raised elements on the
+            forefoot help you add swerve to every strike. Take control in
+            Predator 20.3 Firm Ground Boots</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small pt-4 mt-5 py-5">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left mt-3 pb-3">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Liso Football store
+            </h6>
+            <img src="../images/Logo.png" alt="" />
+          </div>
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+            <ul class="list-unstyled">
+              <li>Nike</li>
+              <li>Puma</li>
+              <li>Umbro</li>
+              <li>Adidas</li>
+              <li>Under Armour</li>
+              <li>New balance</li>
+            </ul>
+          </div>
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">GET HELP</h6>
+            <ul class="list-unstyled">
+              <li>Your Account</li>
+              <li>Return</li>
+              <li>Order status</li>
+              <li>Help</li>
+            </ul>
+          </div>
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p><i class="fas fa-home mr-3"></i>Khayelitsha mall, shop 2</p>
+            <p><i class="fas fa-envelope mr-3"></i> LisoF@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> 021 345 6788</p>
+            <p><i class="fas fa-print mr-3"></i> 021 345 6789</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Footer links -->
+
+        <hr />
+
+        <!-- Grid row -->
+        <div class="row d-flex align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p class="text-center text-md-left">
+              © 2021 Copyright: Musa Ngcobo
+            </p>
+          </div>
+
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0">
+            <!-- Social buttons -->
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-google-plus-g"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="../script.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.mycart.js"></script>
+
+    <script type="text/javascript">
+      $(function () {
+        var goToCartIcon = function ($addTocartBtn) {
+          var $cartIcon = $(".my-cart-icon");
+          var $image = $(
+            '<img width="30px" height="30px" src="' +
+              $addTocartBtn.data("image") +
+              '"/>'
+          ).css({ position: "fixed", "z-index": "999" });
+          $addTocartBtn.prepend($image);
+          var position = $cartIcon.position();
+          $image.animate(
+            {
+              top: position.top,
+              left: position.left,
+            },
+            500,
+            "linear",
+            function () {
+              $image.remove();
+            }
+          );
+        };
+
+        $(".my-cart-btn").myCart({
+          currencySymbol: "R",
+          classCartIcon: "my-cart-icon",
+          classCartBadge: "my-cart-badge",
+          classProductQuantity: "my-product-quantity",
+          classProductRemove: "my-product-remove",
+          classCheckoutCart: "my-cart-checkout",
+          affixCartIcon: true,
+          showCheckoutModal: true,
+          numberOfDecimals: 2,
+          cartItems: [],
+          clickOnAddToCart: function ($addTocart) {
+            goToCartIcon($addTocart);
+          },
+          afterAddOnCart: function (products, totalPrice, totalQuantity) {
+            console.log("afterAddOnCart", products, totalPrice, totalQuantity);
+          },
+          clickOnCartIcon: function (
+            $cartIcon,
+            products,
+            totalPrice,
+            totalQuantity
+          ) {
+            console.log(
+              "cart icon clicked",
+              $cartIcon,
+              products,
+              totalPrice,
+              totalQuantity
+            );
+          },
+          checkoutCart: function (products, totalPrice, totalQuantity) {
+            var checkoutString =
+              "Total Price: " +
+              totalPrice +
+              "\nTotal Quantity: " +
+              totalQuantity;
+            checkoutString +=
+              "\n\n id \t name \t summary \t price \t quantity \t image path";
+            $.each(products, function () {
+              checkoutString +=
+                "\n " +
+                this.id +
+                " \t " +
+                this.name +
+                " \t " +
+                this.summary +
+                " \t " +
+                this.price +
+                " \t " +
+                this.quantity +
+                " \t " +
+                this.image;
+            });
+            alert(checkoutString);
+            console.log("checking out", products, totalPrice, totalQuantity);
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
